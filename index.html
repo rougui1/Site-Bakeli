@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Bakeli</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@flaticon/flaticon-uicons/css/all/all.css">
+</head>
+
+<body>
+    <div class="bg-img">
+        <header>
+            <div class="logo">
+                <img src="bakeli_logo.png" alt="Logo Bakeli">
+            </div>
+            <button class="menu-resp" aria-label="Ouvrir le menu">
+                <i class="fi fi-rr-menu-burger"></i>
+            </button>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li class="deroulant">
+                        <a href="#">Formations <i class="fi fi-rr-angle-small-down"></i></a>
+                        <ul class="deroulant-menu">
+                            <li><a href="#">Nos domaines</a></li>
+                            <li><a href="#">Stages</a></li>
+                            <li><a href="#">Bakeli Kids</a></li>
+                            <li><a href="#">Ateliers & autres</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Fiches métiers<i class="fi fi-rr-angle-small-down"></i></a>
+
+                    </li>
+                    <li>
+                        <a href="#">Entreprises<i class="fi fi-rr-angle-small-down"></i></a>
+
+                    </li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#" class="btn-recrutement">Recrutez un Bakeliste</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="Contenue">
+            <div class="mot-accueil">
+                <h1>Bienvenue à Bakeli</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit <br>
+                    Voluptatum quaerat unde, quos culpa eveniet recusandae <br>
+                    facilis accusantium eos animi aliquam excepturi. <br>
+                    Repudiandae recusandae, eius asperiores optio provident <br>
+                     itaque veritatis commodi.</p>
+                <div class="buttons">
+                    <a href="#" class="btn orange">Voir les formations de Bakeli</a>
+                    <a href="#" class="btn green">Inscrivez-vous à Bakeli</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+   
+    <script>
+        document.querySelector('.menu-resp').addEventListener('click', function () {
+            document.querySelector('.menu').classList.toggle('show');
+        });
+    </script>
+</body>
+
+</html>

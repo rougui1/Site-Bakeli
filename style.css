@@ -1,0 +1,426 @@
+body {
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif sans-serif;
+    color: #333;
+    box-sizing: border-box;
+}
+.bg-img{
+    background-image:linear-gradient(rgb(0,0,0,0.75),rgb(0,0,0,0.75)),url('13566.jpg');
+}
+   
+
+header {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: transparent;
+    max-width: 75%;
+    padding-top: 50px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav.menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav.menu ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+nav.menu ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+
+
+nav.menu ul li .deroulant-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #00a99d;
+    border-radius: 5px;
+    list-style: none;
+    padding: 5px 0;
+    min-width: 200px;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+nav.menu ul li:hover .deroulant-menu {
+    display: block;
+}
+
+nav.menu ul li .deroulant-menu li {
+    padding: 5px 20px;
+}
+
+nav.menu ul li .deroulant-menu li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+.btn-recrutement {
+    background-color: #00a99d;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-recrutement:hover {
+    background-color: #00857a;
+}
+
+.Contenue {
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.Contenue {
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+}
+
+.mot-accueil p {
+    max-width: 500px;
+    text-align: left;
+}
+
+.Contenue h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    margin-top: -10px;
+}
+
+.Contenue p {
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.Contenue .buttons {
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+   text-align: left;
+}
+
+.Contenue .btn{
+    padding: 20px 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+   margin-top: 50px;
+    
+}
+
+.Contenue .btn.orange {
+    background-color: #f48c06;
+    color: white;
+    margin-left: 3px;
+    text-align: left;
+
+
+
+}
+
+.Contenue .btn.orange:hover {
+    background-color: #d97706;
+}
+
+.Contenue .btn.green {
+    background-color: #ffffff;
+    color: #00857a;
+}
+
+.Contenue .btn.green:hover {
+    background-color: #00857a;
+    color: white;
+}
+
+/* .Contenue .btn.green {
+    background-color: #00a99d;
+}
+
+.Contenue .btn.green:hover {
+    background-color: #00857a;
+} */
+
+@media (max-width: 768px) {
+
+    /* .logo img {
+        flex-direction: column;
+        text-align: center;
+    } */
+    
+    nav.menu ul {
+        flex-direction: column;
+        position: absolute;
+        left: 45%;
+        background-color: #00857a;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+
+
+    nav.menu ul li {
+        margin: 10px 0;
+    }
+
+    nav.menu ul .deroulant .deroulant-menu{
+        flex-direction: column;
+        position: absolute;
+        left: -20%;
+        background-color: #00a99d;
+        border-radius: 10px;
+        margin-top: -3px;
+    }
+    nav.menu ul .deroulant .deroulant-menu li a{
+        color: white;
+    }
+    nav.menu ul .deroulant .deroulant-menu li a:hover{
+        background-color: #d97706;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+
+    .btn-recrutement {
+    background-color: #00a99d;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+
+    }
+    .btn-recrutement:hover {
+        background-color: #f48c06;
+    }
+
+    .Contenue h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .Contenue p {
+        font-size: 16px;
+        text-align: center;
+        margin: auto;
+        padding-bottom: 20px;
+    }
+
+    .Contenue .buttons {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .Contenue h1 {
+        font-size: 30px;
+    }
+
+    .Contenue p {
+        font-size: 14px;
+    }
+
+    .Contenue .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    
+}
+
+.menu-resp {
+    display: none;
+    background-color: #00a99d;
+    color: white;
+    border: none;
+    padding: 8px;
+    font-size: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.menu-resp i {
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        
+    }
+
+    .menu.show {
+        display: flex;
+    }
+
+    .menu-resp {
+        display: block;
+        margin-left: auto;
+        margin-right: 20px;
+    }
+
+    .Contenue .btn {
+        padding: 15px 30px;
+        font-size: 13px;
+        border-radius: 5px;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        width: 180px;
+        text-align: center;
+        margin: auto;
+    }
+}
+
+/* suite jours 2 */
+
+.container {
+    text-align: center;
+    padding: 50px;
+    background-color: #eaeaea;
+}
+
+.container h1 {
+    color: #ff9900;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #00a99d;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.container p {
+    width: 100%;
+    margin: 0 auto 40px;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.sec1{
+    display: flex;
+    width: 90%;
+    align-items: center;
+    gap: 20px;
+
+}
+.sec2{
+    display: flex;
+    width: 65%;
+    align-items: center;
+    gap: 50px;
+}
+
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-box {
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    width: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-box .org{
+    background-color: #d97706;
+}
+
+.service-box .Flexi{
+width: 77px;
+}
+
+.service-box {
+    position: relative;
+    overflow: hidden; 
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.service-box::after {
+    content: '';
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ff9900;
+    transition: bottom 0.5s ease-in-out;
+    z-index: -1;
+}
+
+.service-box:hover::after {
+    bottom: 0; 
+}
+
+
+.service-box svg {
+    fill: #00857a;
+    width: 50px;
+    margin-bottom: 15px;
+}
+
+.service-box h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.service-box p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* .highlight {
+    background-color: #ff9900;
+    color: rgb(0, 0, 0);
+}
+
+.highlight h2 {
+    color: rgb(0, 0, 0);
+} */
+
+/* suite jours 3 */
+
+
+@media (max-width: 768px) {
+        .sec1, .sec2 {
+            flex-direction: column; 
+            gap: 20px; 
+            align-items: stretch;
+        }
+    
+        .service-box {
+            width: 90%; 
+            margin: 0 auto; 
+        }
+    }
+
+
